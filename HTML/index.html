@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="”theme-color”" content="”#FFE3F5”" />
+    <meta property=”og:image” content=”http://example.com/image.jpg”>
     <title>Traversy Media</title>
   </head>
   <body>
     <a href="semantic.html">go to blog</a>
-    <h1>Hello world</h1>
+    <h1>"Hello world"</h1>
     <a href="https://google.com" target="_blank">Anchor tag Attributes</a>
     <ol>
       <li>provide information about a element</li>
@@ -36,9 +38,16 @@
         </tr>
       </tbody>
     </table>
-
     <br />
-
+    <br />
+    <label for="gender">select your gender</label>
+    <select name="gender" id="gender">
+      <option value="male">male</option>
+      <option value="female">female</option>
+      <option value="other">others</option>
+    </select>
+    <br />
+    <br /><br />
     <form action="index.html" method="post">
       <label>First Name</label>
       <input type="text" placeholder="enter your name" />
@@ -54,5 +63,46 @@
       Hari Nama is the only weapon which can save you in this maya
     </blockquote>
     <p>Tarak <abbr title="hare krishna maha mantra">Brahma</abbr> Mantra</p>
+
+    <br /><br /><br />
+    <video
+      src=""
+      width="50%"
+      height="50%"
+      controls
+      poster="img.jpg"
+      type="video/mp4"
+    ></video>
+
+    <picture>
+      <source srcset="https://placekitten.com/700" media="(min-width:720px)" />
+      <source srcset="https://placekitten.com/400" media="(min-width:400px)" />
+      <img
+        src="https://placekitten.com/200"
+        alt="this is kitten"
+        title="this is kitten with width of 200px"
+      />
+    </picture>
+
+    <p>Pluto<del>is</del> <ins>isn’t</ins> a planet.</p>
+
+    <p>https://<wbr />www<wbr />.creativebloq<wbr />.com/</p>
+
+    <details>
+      <summary>Outdoor Games</summary>
+      <ul>
+        <li>Cricket</li>
+        <li>VolleyBall</li>
+        <li>BasketBall</li>
+      </ul>
+      <summary>Indoor Games</summary>
+      <ul>
+        <li>Cricket</li>
+        <li>VolleyBall</li>
+        <li>BasketBall</li>
+      </ul>
+    </details>
+
+    is there any tag <kbd>ctrl + c</kbd>
   </body>
 </html>
