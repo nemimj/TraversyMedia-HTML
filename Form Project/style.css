@@ -8,13 +8,13 @@
 }
 
 body{
-    background-color: lightblue;
+    background-color: rgb(55, 98, 153);
     text-align: center;
 }
 
 .container{
     line-height: 1.4;
-    width: 380px;
+    max-width: 380px;
     background-color: white;
     margin: 40px auto;
     text-align: center;
@@ -36,16 +36,18 @@ label{
 input{
     width: 90%;
     padding:0.5rem;
+    border: 1px solid #999;
 }
 
 
 input[type=submit]{
     margin-top: 10px;
-background-color: lightgreen;
+background-color: #49c1a2;
 border: 0;
 padding: 0.8rem;
 color: white;
 font-weight: 500;
+cursor: pointer;
 }
 
 form{
@@ -53,10 +55,21 @@ form{
     line-height: 2;
 }
 
+
+form p{
+    margin-top: 8px;
+    line-height: 1.4;
+    
+}
 .login{
     margin-top: -24px;
 }
 
 .login a{
-    color:darkblue;
+    color:#49c1a2;
+}
+
+
+footer{
+    color: white;
 }
