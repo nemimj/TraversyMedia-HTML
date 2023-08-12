@@ -18,11 +18,11 @@ a{
     height: 600px;
     background-color: #f4f4f4;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
 
-    /** Always goes on the main axis  */
-    justify-content: space-between;
-    /** Always goes on the cross axis */
+    /*todo--------    Always goes on the main axis  */
+    justify-content: center
+    /*todo--------    Always goes on the cross axis */
     align-items: center;
 }
 
@@ -34,12 +34,24 @@ a{
     margin: 10px;
     text-align: center;
     padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item:nth-of-type(1){
-    align-self: flex-start;
+    /* align-self: flex-start; */
+    /* order: 3; */
+    flex-basis: 100px;
+    flex-grow: 2;
 }
 
 .item:nth-of-type(3){
-    align-self: flex-end;
+    /* align-self: flex-end; */
+    /* order: 1; */
+    /* todo --------------     To set the starting width of the box we use flex basis */
+    flex-basis: 200px;
+    
+    flex-grow: 3;
 }
