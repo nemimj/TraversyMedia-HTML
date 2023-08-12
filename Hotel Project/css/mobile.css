@@ -47,7 +47,8 @@
 /* * About info */
 
 #about-info{
-    height: 806px;
+    height: 839px;
+    text-align: center;
 }
 
 #about-info .info-right,
