@@ -13,7 +13,7 @@ body{
 }
 
 p{
-    margin: 0.75rem 0;
+    margin: 1rem 0;
 }
 
 /* Utility Class */
@@ -33,6 +33,10 @@ p{
 }
 .py-3{
     padding: 3rem 0;
+}
+
+.p-2{
+    padding: 2rem;
 }
 
 .text-primary{
@@ -75,10 +79,25 @@ p{
     color: white;
 }
 
+.bg-light{
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark{
+    background-color: #333;
+    color: white;
+}
 
 .text-center{
     text-align: center;
 }
+
+.list{
+    list-style: none;
+    margin: 1rem 0;
+}
+
 /* Navbar */
 #navbar{
     background-color: #333;
@@ -159,4 +178,25 @@ p{
     border-radius: 50%;
     padding: 1rem;
     margin-bottom: 1rem;
+}
+
+
+
+/* Section: Who */
+
+#who{
+    display: flex;
+}
+
+#who div{
+    flex: 1;
+}
+
+#who .who-img{
+    background: url(../img/group-photo.jpg) no-repeat center center/cover;
+}
+
+#who ul li {
+    padding-bottom: 0.5rem;
+    border: 1px dotted #444;
 }
