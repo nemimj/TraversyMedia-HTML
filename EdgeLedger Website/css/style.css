@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p{
+    margin: 0.75rem 0;
+}
+
+/* Utility Class */
+
+.text-primary{
+    color: #93c032;
+}
+
+.main-heading{
+    font-size: 4rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.main-para{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.btn{
+    display: inline-block;
+    color: white;
+    background-color: #93c032;
+    padding: 0.5rem 2rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #7ab436;
+}
+
+
+.btn-dark{
+    background-color: #333;
+    color: white;
+}
+/* Navbar */
+#navbar{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 1rem;
+}
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li a{
+    padding: 0.75rem;
+    color: white;
+    margin-right: 0 0.25rem;
+}
+
+.current{
+    background-color: #93c032;
+    border-radius: 5px;
+}
+
+#navbar ul a:hover{
+    background-color: #93c032;
+    border-radius: 5px;
+}
+
+
+/* Showcase */
+
+#showcase{
+    background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+
+#showcase .showcase-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: 0 2rem;
+
+    /* * overlay */
+    position: absolute;
+    top: 62px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
