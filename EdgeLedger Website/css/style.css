@@ -18,12 +18,35 @@ p{
 
 /* Utility Class */
 
+.container{
+    max-width:1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.py-1{
+    padding: 1.5rem 0;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.py-3{
+    padding: 3rem 0;
+}
+
 .text-primary{
     color: #93c032;
 }
 
 .main-heading{
     font-size: 4rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.middle-heading{
+    font-size: 2rem;
     margin-bottom: 10px;
     line-height: 1.2;
 }
@@ -50,6 +73,11 @@ p{
 .btn-dark{
     background-color: #333;
     color: white;
+}
+
+
+.text-center{
+    text-align: center;
 }
 /* Navbar */
 #navbar{
@@ -109,4 +137,26 @@ p{
     top: 62px;
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* Section: What we do */
+
+#what .items{
+     display: flex;
+     padding: 1rem;
+}
+
+
+#what .items .item{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i{
+    background: #93c032;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
