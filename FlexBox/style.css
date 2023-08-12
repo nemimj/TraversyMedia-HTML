@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.flexbox-container{
+    height: 600px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+
+    /** Always goes on the main axis  */
+    justify-content: space-between;
+    /** Always goes on the cross axis */
+    align-items: center;
+}
+
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: coral;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.item:nth-of-type(1){
+    align-self: flex-start;
+}
+
+.item:nth-of-type(3){
+    align-self: flex-end;
+}
