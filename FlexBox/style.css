@@ -21,21 +21,21 @@ a{
     /* flex-direction: column; */
 
     /*todo--------    Always goes on the main axis  */
-    justify-content: center
+    justify-content: center;
     /*todo--------    Always goes on the cross axis */
-    align-items: center;
+    /* align-items: center; */
 }
 
 .item{
     height: 100px;
-    width: 100px;
     background-color: coral;
     color: white;
     margin: 10px;
     text-align: center;
     padding: 10px;
-
+    
     display: flex;
+    flex : 1 0 100px;
     justify-content: center;
     align-items: center;
 }
@@ -43,15 +43,12 @@ a{
 .item:nth-of-type(1){
     /* align-self: flex-start; */
     /* order: 3; */
-    flex-basis: 100px;
-    flex-grow: 2;
+  
 }
 
 .item:nth-of-type(3){
     /* align-self: flex-end; */
     /* order: 1; */
     /* todo --------------     To set the starting width of the box we use flex basis */
-    flex-basis: 200px;
     
-    flex-grow: 3;
 }
