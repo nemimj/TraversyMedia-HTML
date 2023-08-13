@@ -31,9 +31,16 @@ html{
     text-align: center;
 }
 
-
+#navbar ul{
+    padding: 0.5rem;
+}
+#showcase{
+height: 60vh;
+}
 #showcase .showcase-content{
-    top: 92px;
+    top: 317px;
+    bottom: 192px;
+    height: 0;
 }
 
 
@@ -56,4 +63,8 @@ html{
 
 #contact{
     flex-direction: column;
+}
+
+footer{
+    font-size: 12px;
 }
