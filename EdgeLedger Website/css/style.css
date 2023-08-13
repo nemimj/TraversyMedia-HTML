@@ -43,6 +43,11 @@ p{
     color: #93c032;
 }
 
+.bg-primary{
+    background-color: #93c032;
+    color: white;
+}
+
 .main-heading{
     font-size: 4rem;
     margin-bottom: 10px;
@@ -199,4 +204,68 @@ p{
 #who ul li {
     padding-bottom: 0.5rem;
     border: 1px dotted #444;
+}
+
+
+/* Section: clients */
+
+#clients .items{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#clients .items img{
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+#clients .items div{
+    flex: 1;
+    padding-right: 1rem;
+}
+
+
+
+/* Section: contact */
+
+#contact{
+    display: flex;
+}
+
+#contact .map,#contact .contact-form{
+    flex: 1;
+}
+
+#contact .contact-form .form-group{
+    margin: 0.75rem;
+}
+
+#contact .contact-form label{
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea{
+    outline: 0;
+    border: 0;
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 2px;
+}
+
+
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus{
+    outline: 0;
+    border-color: #93c032;
+}
+
+#contact .map img{
+    display: block;
+    width: 100%;
+    margin: auto;
+
 }
