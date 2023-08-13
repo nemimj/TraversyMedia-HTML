@@ -147,7 +147,6 @@ p{
 
 #showcase .showcase-content{
     height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,6 +159,8 @@ p{
     position: absolute;
     top: 62px;
     left: 0;
+    right:0;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -263,9 +264,20 @@ p{
     border-color: #93c032;
 }
 
+ #contact .contact-form input[type="submit"]{
+    display: block;
+    width: 27%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 #contact .map img{
     display: block;
     width: 100%;
+    height: 100%;
     margin: auto;
 
 }
